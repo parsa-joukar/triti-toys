@@ -1,0 +1,732 @@
+ul,
+ul:hover,
+ul:active {
+  transform: scale(1) !important;
+}
+
+li {
+  list-style: none;
+}
+.button {
+  transition: all 0.2s ease;
+  background-image: linear-gradient(165deg, rgb(255, 128, 128), rgb(131, 9, 9));
+  font-weight: bold;
+  display: block;
+  border-radius: 25px;
+  position: relative;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.happyTruck-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.active-btn-ht{
+  border: 1px solid #d1d3d4;
+  transition: all 0.3s;
+}
+
+.happyTruck-btn img{
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.button:before,
+.button:after,
+.button span:before,
+.button span:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+}
+.button.btn-expand:before,
+.button.btn-expand:after,
+.button.btn-expand span:before,
+.button.btn-expand span:after{
+  height: 250%;
+}
+
+.btn-inner {
+  max-width: 50px;
+  position: relative;
+  background-image: linear-gradient(165deg, rgb(255, 128, 128), rgb(131, 9, 9));
+  padding: 2px 7.5px;
+  display: block;
+  border-radius: 25px;
+  position: relative;
+}
+
+.button.active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgb(54, 0, 0);
+}
+
+.button.active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgb(192, 114, 114);
+}
+
+.ul-1-2_1 .button:nth-child(2) {
+  background-image: linear-gradient(165deg, #8eacc4, #6b90ad);
+}
+
+.ul-1-2_1 .button:nth-child(2).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset #111;
+  -webkit-box-shadow: 4px 4px 10px inset #005397; /* fff*/
+}
+
+.ul-1-2_1 .button:nth-child(2).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset #222;
+  -webkit-box-shadow: -4px -4px 10px inset #afc5d8;
+}
+
+.ul-1-2_1 .button:nth-child(2) .btn-inner {
+  background-image: linear-gradient(165deg, #8eacc4, #6b90ad);
+}
+
+.ul-1-2_1 .button:nth-child(3) {
+  background-image: linear-gradient(165deg, #d3a02a, #ac7801);
+}
+
+.ul-1-2_1 .button:nth-child(3) .btn-inner {
+  background-image: linear-gradient(165deg, #d3a02a, #ac7801);
+}
+
+.ul-1-2_1 .button:nth-child(3).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset #805900;
+}
+
+.ul-1-2_1 .button:nth-child(3).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset #bb9e5a;
+}
+
+.ul-1-2_1 .button:nth-child(4) {
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(148, 150, 176, 1) 100%
+  );
+}
+
+.ul-1-2_1 .button:nth-child(4) .btn-inner {
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(148, 150, 176, 1) 100%
+  );
+}
+
+.ul-1-2_1 .button:nth-child(4).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgb(148, 150, 176);
+  -webkit-box-shadow: 4px 4px 10px inset rgb(148, 150, 176);
+}
+
+.ul-1-2_1 .button:nth-child(4).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgb(255, 255, 255);
+  -webkit-box-shadow: -4px -4px 10px inset rgb(255, 255, 255);
+}
+
+.ul-1-2_1 .button:nth-child(5) {
+  background-image: linear-gradient(165deg, #464646, #505050);
+}
+
+.ul-1-2_1 .button:nth-child(5) .btn-inner {
+  background-image: linear-gradient(165deg, #464646, #505050);
+}
+
+.ul-1-2_1 .button:nth-child(5).active-btn .btn-inner::after {
+  box-shadow: 4px 4px 10px inset #000;
+}
+
+.ul-1-2_1 .button:nth-child(5).active-btn .btn-inner::before {
+  box-shadow: -4px -4px 10px inset #999;
+}
+
+.ul-1-2_1 .button:nth-child(6) {
+  background-image: linear-gradient(165deg, #d4c828, #b4a90c);
+}
+
+.ul-1-2_1 .button:nth-child(6) .btn-inner {
+  background-image: linear-gradient(165deg, #d4c828, #b4a90c);
+}
+
+.ul-1-2_1 .button:nth-child(6).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset #746c04;
+}
+
+.ul-1-2_1 .button:nth-child(6).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset #dbd474;
+}
+
+.ul-1-2_2 .button:nth-child(1) {
+  background-image: linear-gradient(165deg, #31376e, #1d235c);
+}
+
+.ul-1-2_2 .button:nth-child(1) .btn-inner {
+  background-image: linear-gradient(165deg, #31376e, #1d235c);
+}
+.ul-1-2_2 .button:nth-child(1).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset #0b1144;
+}
+
+.ul-1-2_2 .button:nth-child(1).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset #747aaf;
+}
+
+.ul-1-2_2 .button:nth-child(2) {
+  background-image: linear-gradient(165deg, #6b9353, #4c7a32);
+}
+
+.ul-1-2_2 .button:nth-child(2) .btn-inner {
+  background-image: linear-gradient(165deg, #6b9353, #4c7a32);
+}
+.ul-1-2_2 .button:nth-child(2).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset #244610;
+}
+
+.ul-1-2_2 .button:nth-child(2).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset #91ad81;
+}
+.ul-1-2_2 .button:nth-child(3) {
+  background-image: linear-gradient(165deg, #2488a5, #10667e);
+}
+
+.ul-1-2_2 .button:nth-child(3) .btn-inner {
+  background-image: linear-gradient(165deg, #2488a5, #10667e);
+}
+.ul-1-2_2 .button:nth-child(3).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset #054050;
+}
+
+.ul-1-2_2 .button:nth-child(3).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset #76a9b8;
+}
+
+.ul-1-2_2 .button:nth-child(4) {
+  background-image: linear-gradient(165deg, #f0b9a4, #753d0e);
+}
+
+.ul-1-2_2 .button:nth-child(4) .btn-inner {
+  background-image: linear-gradient(165deg, #f0b9a4, #753d0e);
+}
+.ul-1-2_2 .button:nth-child(4).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset #4d2504;
+}
+
+.ul-1-2_2 .button:nth-child(4).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset #e2c6bc;
+}
+
+.ul-1-2_2 .button:nth-child(6) {
+  background-image: linear-gradient(165deg, #d4c828, #b4a90c);
+}
+
+.ul-1-2_2 .button:nth-child(6) .btn-inner {
+  background-image: linear-gradient(165deg, #d4c828, #b4a90c);
+}
+
+.ul-1-2_2 .button:nth-child(6).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset #746c04;
+}
+
+.ul-1-2_2 .button:nth-child(6).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset #dbd474;
+}
+
+
+.ul-2-1_1 .button:nth-child(1) {
+  background-image: linear-gradient(to right, #363636 0%, #b5a777 71%);
+}
+
+.ul-2-1_1 .button:nth-child(1) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #363636 0%,
+    #363636 70%,
+    #b5a777 71%
+  );
+}
+
+.ul-2-1_1 .button:nth-child(1).active-btn .btn-inner:before {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+.ul-2-1_1 .button:nth-child(1).active-btn .btn-inner:after {
+  box-shadow: 4px 4px 10px inset rgba(0, 0, 0, 0.7);
+}
+
+.ul-2-1_1 .button:nth-child(2) {
+  background-image: linear-gradient(to right, #363636 0%, #bcb4ab 71%);
+}
+
+.ul-2-1_1 .button:nth-child(2) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #363636d7 0%,
+    #363636d7 70%,
+    #d1c8bd 71%
+  );
+}
+
+.ul-2-1_1 .button:nth-child(2).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgba(0, 0, 0, 0.7);
+}
+
+.ul-2-1_1 .button:nth-child(2).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+.ul-2-1_1 .button:nth-child(3) {
+  background-image: linear-gradient(to right, #686868 0%, #bcb4ab 71%);
+}
+
+.ul-2-1_1 .button:nth-child(3) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #686868 0%,
+    #686868 70%,
+    #bcb4ab 71%
+  );
+}
+.ul-2-1_1 .button:nth-child(3).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgba(0, 0, 0, 0.7);
+}
+
+.ul-2-1_1 .button:nth-child(3).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+.ul-2-1_1 .button:nth-child(4) {
+  background-image: linear-gradient(to right, #686868 0%, #b5a777 71%);
+}
+
+.ul-2-1_1 .button:nth-child(4) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #686868 0%,
+    #686868 70%,
+    #b5a777 71%
+  );
+}
+.ul-2-1_1 .button:nth-child(4).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgba(0, 0, 0, 0.7);
+}
+
+.ul-2-1_1 .button:nth-child(4).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+.ul-2-2_1 .button:nth-child(1) {
+  background-image: linear-gradient(
+    to right,
+    #ff8839 0%,
+    #ff8839 50%,
+    #6b9353 51%
+  );
+}
+
+.ul-2-2_1 .button:nth-child(1) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #ff8839 0%,
+    #ff8839 50%,
+    #6b9353 51%
+  );
+}
+.ul-2-2_1 .button:nth-child(1).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgba(34, 34, 34, 0.7);
+}
+
+.ul-2-2_1 .button:nth-child(1).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+.ul-2-2_1 .button:nth-child(2) {
+  background-image: linear-gradient(
+    to right,
+    #6b9353 0%,
+    #6b9353 50%,
+    #ca1b22 51%
+  );
+}
+
+.ul-2-2_1 .button:nth-child(2) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #6b9353 0%,
+    #6b9353 50%,
+    #ca1b22 51%
+  );
+}
+.ul-2-2_1 .button:nth-child(2).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgba(34, 34, 34, 0.7);
+}
+
+.ul-2-2_1 .button:nth-child(2).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+.ul-2-2_1 .button:nth-child(3) {
+  background-image: linear-gradient(
+    to right,
+    #2488a5 0%,
+    #2488a5 50%,
+    #e9a446 51%
+  );
+}
+
+.ul-2-2_1 .button:nth-child(3) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #2488a5 0%,
+    #2488a5 50%,
+    #e9a446 51%
+  );
+}
+.ul-2-2_1 .button:nth-child(3).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgba(34, 34, 34, 0.7);
+}
+
+.ul-2-2_1 .button:nth-child(3).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+.ul-2-2_1 .button:nth-child(4) {
+  background-image: linear-gradient(
+    to right,
+    #e9a446 0%,
+    #e9a446 50%,
+    #9032d3 51%
+  );
+}
+
+.ul-2-2_1 .button:nth-child(4) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #e9a446 0%,
+    #e9a446 50%,
+    #9032d3 51%
+  );
+}
+.ul-2-2_1 .button:nth-child(4).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgba(34, 34, 34, 0.7);
+}
+
+.ul-2-2_1 .button:nth-child(4).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+.ul-2-2_2 .button:nth-child(1) {
+  background-image: linear-gradient(to right, #cf5677 0%, #e5d2e5 71%);
+}
+
+.ul-2-2_2 .button:nth-child(1) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #cf5677 0%,
+    #cf5677 70%,
+    #e5d2e5 71%
+  );
+}
+.ul-2-2_2 .button:nth-child(1).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgba(0, 0, 0, 0.7);
+}
+
+.ul-2-2_2 .button:nth-child(1).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+
+.ul-2-2_2 .button:nth-child(2) {
+  background-image: linear-gradient(to right, #c67e82 0%, #8ecccb 71%);
+}
+
+.ul-2-2_2 .button:nth-child(2) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #c67e82 0%,
+    #c67e82 70%,
+    #8ecccb 71%
+  );
+}
+.ul-2-2_2 .button:nth-child(2).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgba(0, 0, 0, 0.7);
+}
+
+.ul-2-2_2 .button:nth-child(2).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+.ul-2-2_2 .button:nth-child(3) {
+  background-image: linear-gradient(to right, #a2d4d5 0%, #e5d2e5 71%);
+}
+
+.ul-2-2_2 .button:nth-child(3) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #a2d4d5 0%,
+    #a2d4d5 70%,
+    #e5d2e5 71%
+  );
+}
+.ul-2-2_2 .button:nth-child(3).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgba(0, 0, 0, 0.7);
+}
+
+.ul-2-2_2 .button:nth-child(3).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+.ul-2-2_2 .button:nth-child(4) {
+  background-image: linear-gradient(to right, #6d4c99 0%, #8dcecd 71%);
+}
+
+.ul-2-2_2 .button:nth-child(4) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #6d4c99 0%,
+    #6d4c99 70%,
+    #8dcecd 71%
+  );
+}
+
+.ul-2-2_2 .button:nth-child(4).active-btn .btn-inner:before {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+.ul-2-2_2 .button:nth-child(4).active-btn .btn-inner:after {
+  box-shadow: 4px 4px 10px inset rgba(0, 0, 0, 0.7);
+}
+
+.ul-2-2_2 .button:nth-child(5) {
+  background-image: linear-gradient(to right, #9181b0 0%, #8dcecd 71%);
+}
+
+.ul-2-2_2 .button:nth-child(5) .btn-inner {
+  background-image: linear-gradient(
+    to right,
+    #9181b0 0%,
+    #9181b0 70%,
+    #8dcecd 71%
+  );
+}
+
+.ul-2-2_2 .button:nth-child(5).active-btn .btn-inner:before {
+  box-shadow: 4px 4px 10px inset rgba(0, 0, 0, 0.7);
+}
+
+.ul-2-2_2 .button:nth-child(5).active-btn .btn-inner:after {
+  box-shadow: -4px -4px 10px inset rgba(255, 255, 255, 0.5);
+}
+
+
+.sprays {
+  display: none;
+  position: absolute;
+  pointer-events: none;
+  width: 80%;
+  height: 100%;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: progid:DXImageTransform. Microsoft. Blur(PixelRadius='0');
+}
+
+.spray {
+  height: 30px;
+  width: auto;
+  position: absolute;
+}
+
+.spray-1 {
+  animation: painting-one 6s ease-in-out infinite;
+  left: 0%;
+  top: 40%;
+}
+
+.spray-2 {
+  transform: rotateY(180deg);
+  right: 10%;
+  bottom: 40%;
+  animation: painting-two 6s ease-in-out infinite;
+}
+
+@keyframes painting-one {
+  0% {
+    left: 0%;
+    top: 40%;
+  }
+  50% {
+    left: 50%;
+    top: 10%;
+  }
+  65% {
+    left: 40%;
+    top: 15%;
+  }
+  85% {
+    left: 30%;
+    top: 10%;
+  }
+  100% {
+    left: 0%;
+    top: 40%;
+  }
+}
+
+@keyframes painting-two {
+  0% {
+    right: 10%;
+    bottom: 40%;
+  }
+  50% {
+    right: 60%;
+    bottom: 10%;
+  }
+  100% {
+    right: 10%;
+    bottom: 40%;
+  }
+}
+
+/* language toggle btn */
+
+.switch {
+      display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1200px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: 100%;
+    margin: 18px auto;
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+}
+
+
+
+.switch > span {
+  position: absolute;
+  top: 14px;
+  pointer-events: none;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: #f58181;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: #fff;
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 2px;
+  color: #f58181;
+}
+
+.switch > span.off {
+  right: 0;
+  padding-right: 4px;
+  color: #fff;
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 100px;
+  height: 35px;
+  background-color: #f58181;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:before,
+input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #f58181;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 48px;
+  background-color: #fff;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 52px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 44px;
+}
+
+
+
